@@ -155,289 +155,90 @@ The audit demonstrates why AI-generated citations must be independently checked 
 
 # Curated Research Papers
 
-The research paper contains 23 bibliography entries. The collection below organizes the relevant scholarly works into meaningful research categories.
+# Curated Research Papers
 
-The instruction sheet requires at least 20 verified scholarly papers and recommends categorizing papers according to research subtopics.
+The following papers represent key research relevant to LLM evaluation, benchmark reliability, model behavior, and performance drift.
 
----
+## 1. How Is ChatGPT's Behavior Changing Over Time?
 
-## Survey and Review Papers
+**Chen, L., Zaharia, M., & Zou, J. (2024)**
 
-### 1. Holistic Evaluation of Language Models
+Directly investigates changes in ChatGPT behavior over time and is one of the most directly relevant works for longitudinal LLM evaluation.
 
-**Bommasani, R., Liang, P., & Lee, T. (2023)**  
-*Holistic evaluation of language models.*  
-Annals of the New York Academy of Sciences, 1525(1), 140–146.
-
-[DOI: 10.1111/nyas.15007](https://doi.org/10.1111/nyas.15007)
-
-Provides a concise discussion of holistic evaluation of language models and supports evaluating models across multiple scenarios and metrics rather than relying on a single capability measure.
+[DOI](https://doi.org/10.1162/99608f92.5317da47)
 
 ---
 
-### 2. Benchmarking Large Language Models Under Data Contamination: A Survey from Static to Dynamic Evaluation
+## 2. Holistic Evaluation of Language Models
 
-**Chen, S., Chen, Y., Li, Z., Jiang, Y., Wan, Z., He, Y., Ran, D., Gu, T., Li, H., Xie, T., & Ray, B. (2025)**  
-*Benchmarking large language models under data contamination: A survey from static to dynamic evaluation.*  
-EMNLP 2025, 10080–10098.
+**Liang, P., Bommasani, R., Lee, T., et al. (2022)**
 
-[DOI: 10.18653/v1/2025.emnlp-main.511](https://doi.org/10.18653/v1/2025.emnlp-main.511)
+Introduces HELM, a framework for evaluating language models across multiple scenarios and metrics.
 
-Reviews benchmark contamination and the transition from static evaluation toward dynamic evaluation.
+[DOI](https://doi.org/10.48550/arXiv.2211.09110)
 
 ---
 
-### 3. Quantifying Reproducibility in NLP and ML
+## 3. Measuring Massive Multitask Language Understanding
 
-**Belz, A. (2021)**  
-*Quantifying reproducibility in NLP and ML.*  
-arXiv:2109.01211.
+**Hendrycks, D., Burns, C., Basart, S., et al. (2021)**
 
-[DOI: 10.48550/arXiv.2109.01211](https://doi.org/10.48550/arXiv.2109.01211)
+Introduces MMLU, a widely used benchmark for evaluating knowledge and reasoning across multiple subjects.
 
-Provides methodological background for evaluating reproducibility in NLP and machine learning experiments.
+[arXiv](https://arxiv.org/abs/2009.03300)
 
 ---
 
-## Foundational Papers
+## 4. MMLU-Pro
 
-### 4. Scaling Laws for Neural Language Models
+**Wang, Y., Ma, X., Zhang, G., et al. (2024)**
 
-**Kaplan, J., McCandlish, S., Henighan, T., Brown, T. B., Chess, B., Child, R., Gray, S., Radford, A., Wu, J., & Amodei, D. (2020)**  
-*Scaling laws for neural language models.*
+Introduces a more challenging and robust version of MMLU for evaluating modern language models.
 
-[DOI: 10.48550/arXiv.2001.08361](https://doi.org/10.48550/arXiv.2001.08361)
-
-Studies relationships between model size, training data, compute, and language-model loss.
+[DOI](https://doi.org/10.48550/arXiv.2406.01574)
 
 ---
 
-### 5. An Empirical Analysis of Compute-Optimal Large Language Model Training
+## 5. LiveCodeBench
 
-**Hoffmann, J., Borgeaud, S., Mensch, A., et al. (2022)**  
-*An empirical analysis of compute-optimal large language model training.*  
-Advances in Neural Information Processing Systems, 35.
+**Jain, N., Han, K., Gu, A., et al. (2025)**
 
-[DOI: 10.52202/068431-2176](https://doi.org/10.52202/068431-2176)
+Presents a contamination-resistant coding benchmark using newly released programming problems.
 
-Examines the relationship between model parameters, training data, and compute in large language model training.
+[DOI](https://doi.org/10.48550/arXiv.2403.07974)
 
 ---
 
-### 6. Measuring Massive Multitask Language Understanding
+## 6. SWE-bench
 
-**Hendrycks, D., Burns, C., Basart, S., Zou, A., Mazeika, M., Song, D., & Steinhardt, J. (2021)**  
-*Measuring massive multitask language understanding.*  
-ICLR 2021.
+**Jimenez, C. E., Yang, J., Wettig, A., et al. (2024)**
 
-[arXiv: 2009.03300](https://arxiv.org/abs/2009.03300)
+Evaluates language models on real-world GitHub software-engineering issues.
 
-Introduces MMLU, a broad benchmark covering 57 tasks across subjects including mathematics, history, computer science, law, and other areas.
+[DOI](https://doi.org/10.48550/arXiv.2310.06770)
 
 ---
 
-### 7. Training Verifiers to Solve Math Word Problems
+## 7. Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena
 
-**Cobbe, K., Kosaraju, V., Bavarian, M., Chen, M., Jun, H., Kaiser, L., Plappert, M., Tworek, J., Hilton, J., Nakano, R., Hesse, C., & Schulman, J. (2021)**  
-*Training verifiers to solve math word problems.*
+**Zheng, L., Chiang, W.-L., Sheng, Y., et al. (2023)**
 
-[DOI: 10.48550/arXiv.2110.14168](https://doi.org/10.48550/arXiv.2110.14168)
+Investigates LLM-based evaluation and identifies important biases and reliability considerations.
 
-Introduces GSM8K and provides a benchmark for evaluating mathematical reasoning.
-
----
-
-### 8. Are Emergent Abilities of Large Language Models a Mirage?
-
-**Schaeffer, R., Miranda, B., & Koyejo, S. (2023)**  
-*Are emergent abilities of large language models a mirage?*
-
-[DOI: 10.48550/arXiv.2304.15004](https://doi.org/10.48550/arXiv.2304.15004)
-
-Examines how evaluation metrics can influence apparent changes in model capabilities.
+[DOI](https://doi.org/10.52202/075280-2020)
 
 ---
 
-## Recent Research Papers
+## 8. Are Emergent Abilities of Large Language Models a Mirage?
 
-### 9. How Is ChatGPT's Behavior Changing Over Time?
+**Schaeffer, R., Miranda, B., & Koyejo, S. (2023)**
 
-**Chen, L., Zaharia, M., & Zou, J. (2024)**  
-*How is ChatGPT’s behavior changing over time?*  
-Harvard Data Science Review, 6(2).
+Examines how evaluation methods and metrics can affect apparent changes in model capabilities.
 
-[DOI: 10.1162/99608f92.5317da47](https://doi.org/10.1162/99608f92.5317da47)
-
-Directly studies changes in GPT-3.5 and GPT-4 behavior over time and provides important evidence for longitudinal LLM evaluation.
+[DOI](https://doi.org/10.48550/arXiv.2304.15004)
 
 ---
 
-### 10. Mapping and Measuring the Behavioral Evolution of Large Language Models
-
-**Qiao, D., Ding, C., & Fan, J. (2026)**  
-*Mapping and measuring the behavioral evolution of large language models.*
-
-[DOI: 10.48550/arXiv.2608.11027](https://doi.org/10.48550/arXiv.2608.11027)
-
-Studies behavioral evolution across model generations and supports analyzing LLM behavior as a temporal trajectory.
-
----
-
-### 11. MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark
-
-**Wang, Y., Ma, X., Zhang, G., et al. (2024)**  
-*MMLU-Pro: A more robust and challenging multi-task language understanding benchmark.*
-
-[DOI: 10.48550/arXiv.2406.01574](https://doi.org/10.48550/arXiv.2406.01574)
-
-Introduces a more challenging version of MMLU designed to provide more discriminative evaluation.
-
----
-
-### 12. NEO-BENCH: Evaluating Robustness of Large Language Models with Neologisms
-
-**Zheng, J., Ritter, A., & Xu, W. (2024)**  
-*NEO-BENCH: Evaluating robustness of large language models with neologisms.*  
-ACL 2024, 13885–13906.
-
-[DOI: 10.18653/v1/2024.acl-long.749](https://doi.org/10.18653/v1/2024.acl-long.749)
-
-Investigates temporal language drift and model performance on emerging neologisms.
-
----
-
-## Methods and Algorithms
-
-### 13. An Empirical Investigation of Statistical Significance in NLP
-
-**Berg-Kirkpatrick, T., Burkett, D., & Klein, D. (2012)**  
-*An empirical investigation of statistical significance in NLP.*  
-EMNLP-CoNLL 2012, 995–1005.
-
-[ACL Anthology: D12-1091](https://aclanthology.org/D12-1091/)
-
-Provides statistical methodology relevant to determining whether differences between model versions represent meaningful changes.
-
----
-
-### 14. The Hitchhiker's Guide to Testing Statistical Significance in Natural Language Processing
-
-**Dror, R., Baumer, G., Shlomov, S., & Reichart, R. (2018)**  
-*The hitchhiker’s guide to testing statistical significance in natural language processing.*  
-ACL 2018.
-
-Provides practical guidance for statistical significance testing in NLP.
-
----
-
-### 15. Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena
-
-**Zheng, L., Chiang, W.-L., Sheng, Y., Zhuang, S., Wu, Z., Zhuang, Y., Lin, Z., Li, Z., Li, D., Xing, E. P., Zhang, H., Gonzalez, J. E., & Stoica, I. (2023)**  
-*Judging LLM-as-a-judge with MT-Bench and Chatbot Arena.*  
-NeurIPS 2023, 46595–46623.
-
-[DOI: 10.52202/075280-2020](https://doi.org/10.52202/075280-2020)
-
-Examines LLM-based judging and identifies biases and reliability issues relevant to automated longitudinal evaluation.
-
----
-
-### 16. Benchmarking LLM-as-a-Judge for Long-Form Output Evaluation
-
-**Chen, J., Dong, Y., Li, H., Su, W., Zhou, Y., Zhang, M., Liu, Y., & Ai, Q. (2026)**  
-*Benchmarking LLM-as-a-judge for long-form output evaluation.*
-
-[DOI: 10.48550/arXiv.2606.01629](https://doi.org/10.48550/arXiv.2606.01629)
-
-Examines the reliability of LLM judges for long-form outputs.
-
----
-
-## Applications
-
-### 17. SWE-bench: Can Language Models Resolve Real-World GitHub Issues?
-
-**Jimenez, C. E., Yang, J., Wettig, A., Yao, S., Pei, K., Press, O., & Narasimhan, K. (2024)**  
-*SWE-bench: Can language models resolve real-world GitHub issues?*  
-ICLR 2024.
-
-[DOI: 10.48550/arXiv.2310.06770](https://doi.org/10.48550/arXiv.2310.06770)
-
-Evaluates language models on real-world software-engineering issues and demonstrates application-grounded evaluation.
-
----
-
-### 18. WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild
-
-**Lin, B. Y., Deng, Y., Chandu, K., Brahman, F., Ravichander, A., Pyatkin, V., Dziri, N., Le Bras, R., & Choi, Y. (2024)**  
-*WildBench: Benchmarking LLMs with challenging tasks from real users in the wild.*
-
-[DOI: 10.48550/arXiv.2406.04770](https://doi.org/10.48550/arXiv.2406.04770)
-
-Uses challenging tasks derived from real user interactions to bridge the gap between academic benchmarks and real-world workloads.
-
----
-
-### 19. Holistic Evaluation of Language Models
-
-**Liang, P., Bommasani, R., Lee, T., et al. (2022)**  
-*Holistic evaluation of language models.*
-
-[DOI: 10.48550/arXiv.2211.09110](https://doi.org/10.48550/arXiv.2211.09110)
-
-Introduces HELM, a framework for standardized and multidimensional evaluation of language models.
-
----
-
-## Evaluation Methods and Benchmarks
-
-### 20. LiveCodeBench: Holistic and Contamination-Free Evaluation of Large Language Models for Code
-
-**Jain, N., Han, K., Gu, A., Li, W.-D., Yan, F., Zhang, T., Wang, S., Solar-Lezama, A., Sen, K., & Stoica, I. (2025)**  
-*LiveCodeBench: Holistic and contamination-free evaluation of large language models for code.*  
-ICLR 2025.
-
-[DOI: 10.48550/arXiv.2403.07974](https://doi.org/10.48550/arXiv.2403.07974)
-
-Uses newly released coding problems and temporal evaluation to reduce contamination and evaluate coding capabilities.
-
----
-
-### 21. How Contaminated Is Your Benchmark? Measuring Dataset Leakage in Large Language Models with Kernel Divergence
-
-**Choi, H. K., Khanov, M., Wei, H., & Li, Y. (2025)**  
-*How contaminated is your benchmark? Measuring dataset leakage in large language models with Kernel Divergence.*  
-ICML 2025, PMLR 267, 10666–10682.
-
-Studies methods for measuring benchmark leakage and contamination.
-
----
-
-### 22. Investigating Data Contamination in Modern Benchmarks for Large Language Models
-
-**Chen, C., Zhao, Y., Tang, X., Gerstein, M., & Cohan, A. (2024)**  
-*Investigating data contamination in modern benchmarks for large language models.*  
-NAACL-HLT 2024.
-
-[ACL Anthology](https://aclanthology.org/2024.naacl-long.482/)
-
-Investigates benchmark contamination in modern LLM evaluation.
-
----
-
-### 23. An Empirical Investigation of Statistical Significance in NLP
-
-**Berg-Kirkpatrick, T., Burkett, D., & Klein, D. (2012)**  
-*An empirical investigation of statistical significance in NLP.*  
-EMNLP-CoNLL 2012.
-
-[ACL Anthology: D12-1091](https://aclanthology.org/D12-1091/)
-
-Provides statistical methods relevant to comparing model versions.
-
-> **Note:** This paper is already listed under Methods and Algorithms. The duplication here reflects the benchmark/evaluation relevance of the work; the repository's detailed `references/references.md` should contain each paper only once.
-
----
 
 # Datasets
 
