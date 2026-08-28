@@ -50,7 +50,7 @@ DOI: https://doi.org/10.48550/arXiv.2001.08361
 
 ---
 
-### [5] An Empirical Analysis of Compute-Optimal Large Language Model Training
+### [5] Training Compute-Optimal Large Language Models
 
 Hoffmann, J., Borgeaud, S., Mensch, A., et al. (2022).  
 *An empirical analysis of compute-optimal large language model training.*  
