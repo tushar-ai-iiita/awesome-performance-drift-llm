@@ -103,55 +103,28 @@ The paper also proposes monitoring dimensions such as correctness, reasoning, in
 
 ## Citation Integrity Audit
 
-The research paper was accompanied by a systematic citation-integrity audit.
-
-The audit was performed to determine whether AI-generated references were genuine, correctly identified, associated with the supplied identifiers, and appropriate for the claims for which they were cited.
-
-### Audit Profile
-
-| Item | Result |
-|---|---:|
-| AI tool used | ChatGPT |
-| Model/version shown | GPT-5.6 Luna |
-| Date of paper generation | 21 August 2026 |
-| Total references in paper | 23 |
-| DOI available | 18 |
-| PMID available without DOI | 0 |
-| arXiv ID available without DOI/PMID | 0 |
-| URL-only references | 2 |
-| No persistent identifier | 3 |
-| References selected for systematic audit | 10 |
-
-The audit selected references systematically using the required sampling procedure rather than choosing only suspicious-looking citations.
+The research paper contains **23 references**, of which **10 were systematically selected and audited**.
 
 ### Audit Results
 
-| Classification | Count |
+| Metric | Result |
 |---|---:|
-| A — Verified | 10 |
-| B — Wrong Metadata | 0 |
-| C — Frankenstein | 0 |
-| D — Fabricated | 0 |
-| E — Identifier Mismatch | 0 |
-| Total Audited | 10 |
+| Total references | 23 |
+| References systematically audited | 10 |
+| Verified references | 10 |
+| Wrong metadata | 0 |
+| Frankenstein references | 0 |
+| Fabricated references | 0 |
+| Identifier mismatch | 0 |
+| Authenticity score | 100/100 |
+| Prediction accuracy | 100% |
 
-### Scores
+All 10 systematically audited references were classified as **Verified (A)**.
 
-- **Authenticity Score:** 100/100
-- **Prediction Accuracy:** 100%
+> The 100/100 score applies to the audited sample of 10 references and does not mean that all 23 references were individually audited.
 
-All ten audited references were classified as genuine and the supplied bibliographic information and identifiers were found to correspond to the cited publications.
-
-The audit also found that the cited claims in the sampled references were consistent with the scope and findings of the corresponding publications.
-
-> **Important:** The 100/100 result applies to the systematically audited sample of 10 references. It does not mean that every one of the 23 references in the paper was individually audited.
-
-The audit demonstrates why AI-generated citations must be independently checked rather than accepted solely because they contain realistic authors, venues, DOI identifiers, or arXiv identifiers.
-
-**Citation Integrity Audit:**  
-[Citation Integrity Audit](citation-audit/Citation_Integrity_Audit.pdf)
-
----
+**Citation Audit:**  
+`citation-audit/Citation_Integrity_Audit.pdf`
 
 # Curated Research Papers
 
